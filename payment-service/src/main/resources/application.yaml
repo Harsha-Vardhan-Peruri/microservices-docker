@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: payment-service
+
+
+server:
+  port: 8082
+
+logging:
+  file:
+    name: ${user.home}/microservices-logs/payment-service/payment-service.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level traceId=%X{traceId} %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level traceId=%X{traceId} %logger{36} - %msg%n"
+
